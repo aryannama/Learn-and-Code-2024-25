@@ -37,8 +37,8 @@ public class AdjacentCountry {
         System.out.println("Enter a country code: ");
         String countryCode = scanner.nextLine().toUpperCase();
 
-        JsonObject countriesByCodeData = JsonFileReader.readJsonFile("countryCodes.json");
-        JsonObject adjacentCountriesData = JsonFileReader.readJsonFile("adjacentCountries.json");
+        JsonObject countriesByCodeData = JsonFileReader.readJsonFile("src\\main\\resources\\countryCodes.json");
+        JsonObject adjacentCountriesData = JsonFileReader.readJsonFile("src\\main\\resources\\adjacentCountries.json");
 
         String countryName = getCountryName(countriesByCodeData, countryCode);
         if (countryName != null) {
