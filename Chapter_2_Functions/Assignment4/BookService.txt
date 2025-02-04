@@ -1,0 +1,6 @@
+class BookService {
+     function save() {
+        $filename = '/documents/'. $this->getTitle(). ' - ' . $this->getAuthor();
+        file_put_contents($filename, serialize($this));
+    }
+}

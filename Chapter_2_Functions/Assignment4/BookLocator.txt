@@ -1,0 +1,6 @@
+    class BookLocator {
+    function getLocation(Book $book) {
+         // returns the position in the library
+        // ie. shelf number & room number
+    }
+}
